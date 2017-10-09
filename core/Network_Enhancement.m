@@ -8,17 +8,17 @@ function [ W_out] = Network_Enhancement( W_in,order,K,alpha)
 
 if nargin<2
     K =min(20,ceil(length(W_in)/10));
-    alpha = 0.8;
+    alpha = 0.9;
     order = 2;
 end
 
 if nargin<3
     K =min(20,ceil(length(W_in)/10));
-    alpha = 0.8;
+    alpha = 0.9;
 end
 
 if nargin<4
-    alpha = 0.8;
+    alpha = 0.9;
 end
 
 W_in1 = W_in.*(1-eye(length(W_in)));
